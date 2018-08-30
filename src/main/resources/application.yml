@@ -1,0 +1,14 @@
+spring:
+  profiles:
+    active: dev
+# JWT
+jwt:
+  header: Authorization
+  secret: mySecret
+  expiration: 3600000
+  tokenHead: "Bearer "
+  route:
+    authentication:
+      path: auth
+      refresh: refresh
+      register: "auth/register"
